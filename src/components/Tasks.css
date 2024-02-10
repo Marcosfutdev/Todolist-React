@@ -1,0 +1,32 @@
+.container_tasks{
+    background-color:rgb(0, 0, 0);
+    height: 590px;
+    width: 850px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 2px solid #ffffff;
+    border-radius:25px;
+    outline-color: #e800f0;
+    outline-width: 3px;
+    outline-style: solid;
+    box-shadow: rgba(255, 255, 255, 0.262) 0px 10px 20px, rgba(255, 255, 255, 0.369) 0px 6px 6px;
+}
+.container_tasks:hover{
+ transition: .1.3s;
+ outline-color: blue;
+ outline-width: 6px;
+ outline-style: solid;
+ box-shadow: rgba(255, 255, 255, 0.513) 0px 10px 20px, rgb(255, 255, 255) 0px 6px 6px;
+
+}
+.position{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 100px;
+    margin-left: 60px;
+    gap:25px;
+   
+}
+
