@@ -10,10 +10,8 @@
    const Tasks = ( {tasksdata, children, handleDelete, SucessTask}) => {
     return(
         <div className="container_tasks"> 
-        
              {children}
-             
-                
+
              <div className="position">
               <Suspense fallback={<p>Loading...</p>}>
               
@@ -22,9 +20,7 @@
                   tasksdata.map(( task )=> (
                       <Task task={task} handleDelete={handleDelete} SucessTask={SucessTask} />
                       ))
-                      
-                    }
-             
+                  }
              </Suspense>
             </div>  
           
