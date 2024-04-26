@@ -5,7 +5,7 @@
   
 
     return(
-        <li className="div_name" onClick={()=>{ SucessTask(task.id) }} style={task.completed ? {border:"2px solid green"}:{}}
+        <li className="div_name" onClick={()=>{ SucessTask(task.id) }} style={task ? {border:"3px solid green"}:{}}
           key={task.id}>
             {task.taskTitle} 
          <div className="flex">

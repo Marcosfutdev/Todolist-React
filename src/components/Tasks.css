@@ -1,6 +1,5 @@
 .container_tasks{
     background-color:rgb(0, 0, 0);
-    height: 590px;
     width: 850px;
     margin: 0 auto;
     margin-top: 100px;
@@ -10,6 +9,7 @@
     outline-width: 3px;
     outline-style: solid;
     box-shadow: rgba(255, 255, 255, 0.262) 0px 10px 20px, rgba(255, 255, 255, 0.369) 0px 6px 6px;
+    padding-bottom: 80px;
 }
 .container_tasks:hover{
  transition: .1.3s;

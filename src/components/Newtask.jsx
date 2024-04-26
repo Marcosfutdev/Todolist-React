@@ -1,7 +1,7 @@
-  import React, { useState } from 'react'
-   import './Newtask.css'
-  const Newtask = ( {handleTaskAddition }) => {
-    const [inputData, setInputData] = useState('');
+    import React, { useState } from 'react'
+    import './Newtask.css'
+    const Newtask = ( {handleTaskAddition }) => {
+      const [inputData, setInputData] = useState('');
       const handleClickAdd = () =>{
         handleTaskAddition(inputData);
         if(inputData.length > 0){
@@ -9,14 +9,20 @@
           setInputData('');
         }
         else{
-         var confirma =  confirm('Sua tarefa será nomeada como "tarefa sem nome". Deseja alterar? ')
-         if(confirma){
-         var prom =  prompt('Digite para modificar:')
-        handleTaskAddition(prom)
-         } else{
-             handleTaskAddition('Tarefa sem nome')
-         }
+          var confirma = confirm("Sua tarefa será salva como 'tarefa sem nome', deseja alterar?");
 
+          if(confirma){
+            var pro = prompt("Digite para alterar:")
+          }
+          else{
+            handleTaskAddition('Tarefa sem nome')
+          }
+         if(pro){
+          handleTaskAddition(pro)
+         }
+         else{
+           handleTaskAddition('Tarefa sem nome')
+         }
         }
       }
       

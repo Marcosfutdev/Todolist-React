@@ -1,7 +1,6 @@
- import {useState} from 'react';
-// import of components
-  import Tasks from './components/Tasks.jsx'
-  import Navbar from './components/Navbar.jsx';
+   import {useState} from 'react';
+   // import of components
+  import Tasks from './components/Tasks.jsx';
   import Newtask from './components/Newtask.jsx';
   
   var nextID = 2;
@@ -23,6 +22,7 @@
       const SucessTask = (taskID)=>{
        const newTask  = tasksdata.map( task => {
            if(taskID === task.id) return {...task, completed: !task.completed}
+           
               return task;
        })
        setTasksData(newTask)
@@ -31,10 +31,11 @@
     return(
       <div className="App">
         
-        <Navbar/>
+      
           <Tasks tasksdata={tasksdata} handleDelete={handleDelete} SucessTask={SucessTask} >
             <Newtask handleTaskAddition={handleTaskAddition} />
           </Tasks>
+          
       </div>
     )
   }
