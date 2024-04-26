@@ -30,8 +30,6 @@
      
     return(
       <div className="App">
-        
-      
           <Tasks tasksdata={tasksdata} handleDelete={handleDelete} SucessTask={SucessTask} >
             <Newtask handleTaskAddition={handleTaskAddition} />
           </Tasks>
